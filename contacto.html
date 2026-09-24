@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Ferretería Rimac</title>
+    <link rel="stylesheet" href="estilos.css">
+    <meta name="description" content="Contáctanos - Ferretería Rimac. Estamos ubicados en Jr. Unión 316, Taraco. Llámanos al 950009389 o 958705910.">
+</head>
+<body>
+    <!-- NAVEGACIÓN -->
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>Ferretería Rimac</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- BANNER DE CONTACTO -->
+    <section class="banner-contacto">
+        <div class="banner-content">
+            <h2>Contáctanos</h2>
+            <p>Estamos aquí para ayudarte con tu proyecto</p>
+        </div>
+    </section>
+
+    <!-- INFORMACIÓN DE CONTACTO -->
+    <section class="info-contacto">
+        <div class="container">
+            <h2>Información de Contacto</h2>
+            <p class="subtitle">Visítanos o comunícate con nosotros</p>
+            
+            <div class="info-grid">
+                <div class="info-card">
+                    <div class="icono-contacto">
+                        <img src="https://cdn-icons-png.flaticon.com/512/684/684908.png" alt="Ubicación">
+                    </div>
+                    <h3>Nuestra Ubicación</h3>
+                    <p>Jr. Uuuu </p>
+                    <p>Puno - Perú</p>
+                </div>
+
+                <div class="info-card">
+                    <div class="icono-contacto">
+                        <img src="https://cdn-icons-png.flaticon.com/512/724/724664.png" alt="Teléfono">
+                    </div>
+                    <h3>Llámanos</h3>
+                    <p><a href="tel:+51900000000">900 000 000</a></p>
+                    <p><a href="tel:+51950000000">950 000 000</a></p>
+                </div>
+
+                <div class="info-card">
+                    <div class="icono-contacto">
+                        <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email">
+                    </div>
+                    <h3>Escríbenos</h3>
+                    <p><a href="mailto:ventas@ferreteriarimac.com">ventas@ferreteriarimac.com</a></p>
+                    <p><a href="mailto:info@ferreteriarimac.com">info@ferreteriarimac.com</a></p>
+                </div>
+
+                <div class="info-card">
+                    <div class="icono-contacto">
+                        <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+                    </div>
+                    <h3>WhatsApp</h3>
+                    <p><a href="https://wa.me/51900000000" target="_blank">900 000 000</a></p>
+                    <p><a href="https://wa.me/51950000000" target="_blank">950 000 000</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- HORARIOS DE ATENCIÓN -->
+    <section class="horarios">
+        <div class="container">
+            <h2>Horario de Atención</h2>
+            <div class="horarios-grid">
+                <div class="horario-item">
+                    <h3>Lunes a Viernes</h3>
+                    <p class="hora">8:00 AM - 7:00 PM</p>
+                </div>
+                <div class="horario-item">
+                    <h3>Sábados</h3>
+                    <p class="hora">8:00 AM - 5:00 PM</p>
+                </div>
+                <div class="horario-item">
+                    <h3>Domingos</h3>
+                    <p class="hora">9:00 AM - 1:00 PM</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FORMULARIO DE CONTACTO -->
+    <section class="formulario-contacto">
+        <div class="container">
+            <h2>Envíanos un Mensaje</h2>
+            <p class="subtitle">Completa el formulario y te responderemos a la brevedad</p>
+            
+            <form class="form-contacto" action="#" method="POST">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="nombre">Nombre Completo *</label>
+                        <input type="text" id="nombre" name="nombre" required placeholder="Ej: Juan Pérez">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Correo Electrónico *</label>
+                        <input type="email" id="email" name="email" required placeholder="ejemplo@correo.com">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="telefono">Teléfono / Celular *</label>
+                        <input type="tel" id="telefono" name="telefono" required placeholder="Ej: 900000000">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="asunto">Asunto</label>
+                        <select id="asunto" name="asunto">
+                            <option value="">Seleccione un asunto</option>
+                            <option value="consulta">Consulta de Productos</option>
+                            <option value="cotizacion">Solicitar Cotización</option>
+                            <option value="reclamo">Reclamo o Sugerencia</option>
+                            <option value="delivery">Consulta sobre Delivery</option>
+                            <option value="otro">Otro</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="mensaje">Mensaje *</label>
+                    <textarea id="mensaje" name="mensaje" rows="6" required placeholder="Escribe tu mensaje aquí..."></textarea>
+                </div>
+
+                <div class="form-group-checkbox">
+                    <input type="checkbox" id="acepto" name="acepto" required>
+                    <label for="acepto">Acepto la política de privacidad y el tratamiento de mis datos personales</label>
+                </div>
+
+                <button type="submit" class="btn-enviar">Enviar Mensaje</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- MAPA DE GOOGLE -->
+    <section class="mapa">
+        <div class="container">
+            <h2>Encuéntranos</h2>
+            <p class="subtitle">Jr. Uuuuu Puno - Perú</p>
+            
+            <div class="mapa-contenedor">
+                <!-- Google Maps Embed -->
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3868.5!2d-69.98!3d-15.30!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTXCsDE4JzAwLjAiUyA2OcKwNTgnNDguMCJX!5e0!3m2!1ses!2spe!4v1234567890" 
+                    width="100%" 
+                    height="450" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+                
+                <!-- Nota: Reemplaza el src del iframe con la URL correcta de Google Maps para Jr. Unión 316, Taraco -->
+                <!-- Para obtener la URL correcta:
+                     1. Busca "Jr. Unión 316, Taraco" en Google Maps
+                     2. Haz clic en "Compartir"
+                     3. Selecciona "Incorporar un mapa"
+                     4. Copia el código y reemplaza el src del iframe
+                -->
+            </div>
+
+            
+        </div>
+    </section>
+
+    <!-- PREGUNTAS FRECUENTES -->
+    <section class="faq">
+        <div class="container">
+            <h2>Preguntas Frecuentes</h2>
+            
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3>¿Hacen delivery?</h3>
+                    <p>Sí, contamos con servicio de delivery en Taraco y zonas aledañas. Para pedidos de mayor volumen, realizamos envíos a toda la región de Puno. Consulta costos y disponibilidad.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>¿Aceptan tarjetas de crédito/débito?</h3>
+                    <p>Sí, aceptamos todas las tarjetas Visa, Mastercard, American Express y Diners. También aceptamos efectivo, Yape, Plin y transferencias bancarias.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>¿Ofrecen cotizaciones?</h3>
+                    <p>Por supuesto. Puedes solicitar una cotización completando nuestro formulario, llamando por teléfono o visitando nuestra tienda. Te responderemos en menos de 24 horas.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>¿Los productos tienen garantía?</h3>
+                    <p>Todos nuestros productos cuentan con garantía del fabricante. Las herramientas eléctricas tienen entre 6 meses y 2 años de garantía según la marca.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>¿Puedo devolver un producto?</h3>
+                    <p>Sí, aceptamos devoluciones dentro de los 7 días posteriores a la compra, siempre que el producto esté en perfectas condiciones, con su empaque original y boleta de venta.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>¿Hacen descuentos por volumen?</h3>
+                    <p>Sí, ofrecemos descuentos especiales para compras al por mayor, empresas constructoras y proyectos grandes. Contáctanos para conocer nuestras tarifas corporativas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- LLAMADA A LA ACCIÓN FINAL -->
+    <section class="cta-final">
+        <div class="container">
+            <h2>¿Listo para iniciar tu proyecto?</h2>
+            <p>Visítanos en Jr. Uuuuuu, Puno o llámanos para una asesoría personalizada</p>
+            <div class="cta-botones">
+                <a href="tel:+51900000000" class="btn-primary">Llamar Ahora</a>
+                <a href="https://wa.me/51900000000" target="_blank" class="btn-secondary">Escribir por WhatsApp</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-columna">
+                    <h3>Ferretería Rimac</h3>
+                    <p>Tu ferretería de confianza desde hace más de 15 años. Calidad, precio y atención garantizada.</p>
+                </div>
+
+                <div class="footer-columna">
+                    <h4>Navegación</h4>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="productos.html">Productos</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-columna">
+                    <h4>Contacto</h4>
+                    <ul>
+                        <li>📍 Jr. Uuuuuu - Puno</li>
+                        <li>📞 950 000 000</li>
+                        <li>📱 950 000 000</li>
+                        <li>✉️ ventas@ferreteriarimac.com</li>
+                    </ul>
+                </div>
+
+                <div class="footer-columna">
+                    <h4>Horario de Atención</h4>
+                    <ul>
+                        <li>Lunes a Viernes: 8:00 AM - 7:00 PM</li>
+                        <li>Sábados: 8:00 AM - 5:00 PM</li>
+                        <li>Domingos: 9:00 AM - 1:00 PM</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 Ferretería Rimac. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
